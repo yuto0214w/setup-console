@@ -6,7 +6,7 @@ A library that provides a function to fix ANSI escaping problem in Windows.
 ## Usage
 Simply run `setup_console::init()` in the main function before printing anything.
 
-```rs
+```rust
 fn main() {
     println!("\x1b[31mRed \x1b[32mGreen \x1b[34mBlue\x1b[39m");
     // ･[31mRed ･[32mGreen ･[34mBlue･[39m
