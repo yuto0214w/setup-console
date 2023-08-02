@@ -1,6 +1,6 @@
 [package]
 name = "setup-console"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Yuto Inoue <yuto0214w@gmail.com>"]
 edition = "2021"
 license = "MIT"

@@ -28,10 +28,7 @@ pub fn init() {
             exit_with_error("failed to set console mode");
         }
     }
-    print!("\x1b[0m");
 }
 
 #[cfg(not(target_os = "windows"))]
-pub fn init() {
-    print!("\x1b[0m");
-}
+pub fn init() {}
