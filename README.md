@@ -18,11 +18,15 @@ fn main() {
 
 ## Panics
 **This only applies to Windows.**
+
 `setup_console::init()` doesn't panic, but shows message and terminates program with error code obtained from
 [`GetLastError()`](https://learn.microsoft.com/en-us/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 instead.
+
 The situations that would lead program to terminate would be
+
 - when stdout is invalid (e.g. `program 1>nul`)
 - when program fails to run [`GetConsoleMode()`](https://learn.microsoft.com/en-us/windows/console/getconsolemode)
 - when program fails to run [`SetConsoleMode()`](https://learn.microsoft.com/en-us/windows/console/setconsolemode)
+
 If this is not your desired behavior, you can use `setup_console::try_init()` which returns `Result`.
