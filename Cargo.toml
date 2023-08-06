@@ -1,11 +1,11 @@
 [package]
 name = "setup-console"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Yuto Inoue <yuto0214w@gmail.com>"]
 edition = "2021"
 license = "MIT"
 description = """
-A library that provides a function to fix ANSI escaping problem in Windows.
+A library that provides a function to fix ANSI escaping problem in Command Prompt on Windows.
 """
 repository = "https://github.com/yuto0214w/setup-console"
 readme = "README.md"
